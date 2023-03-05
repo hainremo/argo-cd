@@ -17,10 +17,3 @@ spec:
           image: amazon/cloudwatch-agent
           ports:
             - containerPort: 8888
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
-
-    automated:
-      selfHeal: true
-      prune: true
